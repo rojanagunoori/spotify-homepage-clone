@@ -6,6 +6,7 @@ const scopes = [
   "playlist-read-private",
   "playlist-read-collaborative",
   "user-library-read", 
+  "user-library-modify"
 ].join(" ");
 
 const handler = NextAuth({
