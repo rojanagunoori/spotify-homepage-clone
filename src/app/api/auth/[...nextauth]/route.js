@@ -22,6 +22,8 @@ const handler = NextAuth({
   callbacks: {
     async jwt({ token, account }) {
       if (account) {
+        console.log("Scopes granted:", account.scope); // ✅ Add this
+        console.log("Account:", account); // ✅ Add this
         token.accessToken = account.access_token;
       }
       return token;
