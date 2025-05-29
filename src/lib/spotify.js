@@ -8,6 +8,24 @@ export const getUserPlaylists = async (accessToken) => {
     if (!res.ok) throw new Error("Failed to fetch playlists");
   
     const data = await res.json();
+    console.log("Playlists: ",data)
     return data.items;
   };
+
+
+
+  export async function getUserSavedTracks(accessToken) {
+    const response = await fetch("https://api.spotify.com/v1/me/tracks", {
+      headers: {
+        Authorization: `Bearer ${accessToken}`,
+      },
+    });
+    if (!response.ok) {
+      throw new Error("Failed to fetch saved tracks");
+    }
+    const data = await response.json();
+    console.log("Tracks: ",Tracks)
+    return data.items; // Each item contains { track: {...} }
+  }
+  
   
