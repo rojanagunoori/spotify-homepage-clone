@@ -9,7 +9,9 @@ export default function PlaylistCard({ playlist }) {
           />
         )}
         <h3 className="font-bold">{playlist.name}</h3>
+        <p className="text-gray-400 text-sm">By {playlist.owner.display_name}</p>
         <p className="text-sm text-gray-400">{playlist.tracks.total} tracks</p>
+        <a href={playlist.external_urls.spotify} target="_blank" rel="noreferrer" className="text-green-400 text-sm">Open Playlist</a>
       </div>
     );
   }
