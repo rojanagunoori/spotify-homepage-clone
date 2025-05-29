@@ -103,7 +103,7 @@ export default function HomePage() {
 
       <div className="mb-6">
       <div className="bg-blue-500 text-white">Hello</div>
-      <div className="background-blue textcolor-white">Hello</div> <!-- These are not Tailwind classes -->
+      <div className="background-blue textcolor-white">Hello</div> 
 
 
         <button
