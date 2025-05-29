@@ -7,7 +7,9 @@ export default function LoginPage() {
       <h1 className="text-2xl mb-4">Login to Spotify Clone</h1>
       <button
         className="bg-green-500 px-4 py-2 rounded"
-        onClick={() => signIn("spotify")}
+       // onClick={() => signIn("spotify")}
+       onClick={() => signIn("spotify", { callbackUrl: "/", prompt: "consent" })}
+
       >
         Sign In with Spotify
       </button>
