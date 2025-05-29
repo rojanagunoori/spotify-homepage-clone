@@ -154,6 +154,14 @@ export default function HomePage() {
                 </p>
                 <p className="track-album">{track.album.name}</p>
                 <a href={track.external_urls.spotify} target="_blank" rel="noreferrer" className="spotify-link">Open in Spotify</a>
+                <iframe
+      src={`https://open.spotify.com/embed/track/${track.id}`}
+      width="100%"
+      height="80"
+      frameBorder="0"
+      allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
+      loading="lazy"
+    />
               </div>
             </div>
           ))}
