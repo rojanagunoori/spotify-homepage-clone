@@ -21,7 +21,8 @@ export const getUserPlaylists = async (accessToken) => {
       },
     });
     if (!response.ok) {
-      throw new Error("Failed to fetch saved tracks");
+      console.log(response)
+      throw new Error("Failed to fetch saved tracks",response);
     }
     const data = await response.json();
     console.log("Tracks: ",Tracks)
