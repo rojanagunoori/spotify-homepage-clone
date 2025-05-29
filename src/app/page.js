@@ -38,7 +38,8 @@ export default function HomePage() {
         <h1 className="text-2xl mb-4">Welcome to Spotify Clone</h1>
         <button
           className="bg-green-500 hover:bg-green-600 px-4 py-2 rounded"
-          onClick={() => signIn("spotify")}
+          //onClick={() => signIn("spotify")}
+          onClick={() => signIn("spotify", { callbackUrl: "/", prompt: "consent" })}
         >
           Login with Spotify
         </button>
