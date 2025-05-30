@@ -1,6 +1,6 @@
-![Alt text]([https://github.com/your-username/your-repo/blob/main/images/my-image.png](https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(388).png)?raw=true)
-![Alt text]([https://github.com/your-username/your-repo/blob/main/images/my-image.png](https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(389).png)?raw=true)
+![Screenshot 388](https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(388).png?raw=true)
 
+![Screenshot 389](https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(389).png?raw=true)
 
 # Spotify Homepage Clone
 
