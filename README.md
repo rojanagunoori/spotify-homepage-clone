@@ -1,3 +1,7 @@
+![Alt text]([https://github.com/your-username/your-repo/blob/main/images/my-image.png](https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(388).png)?raw=true)
+![Alt text]([https://github.com/your-username/your-repo/blob/main/images/my-image.png](https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(389).png)?raw=true)
+
+
 # Spotify Homepage Clone
 
 A React/Next.js app that mimics the Spotify homepage, allowing users to authenticate with Spotify, view their playlists and saved tracks, and interact with their library.
