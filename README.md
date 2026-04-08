@@ -6,9 +6,16 @@
 
 ---
 
-![Screenshot 388](<https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(388).png?raw=true>)
+<video controls width="600">
+  <source src="https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotifyclone.mp4" type="video/mp4">
+</video>
+![Screenshot 1](https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotify1.png)
 
-![Screenshot 389](<https://github.com/rojanagunoori/spotify-homepage-clone/blob/main/Screenshot%20(389).png?raw=true>)
+![Screenshot 2](https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotify2.png)
+
+![Screenshot 3](https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotify3.png)
+
+![Screenshot 4](https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotify4.png)
 
 # Spotify Homepage Clone
 
@@ -55,6 +62,7 @@ spotify-homepage-clone/
 ├─ .env.local # Environment variables
 └─ package.json
 
+```
 
 ---
 
@@ -68,7 +76,8 @@ spotify-homepage-clone/
 - **Other Tools:** npm / yarn, fetch API
 
 ---
-```
+
+````
 
 ---
 
@@ -96,7 +105,7 @@ spotify-homepage-clone/
    ```bash
    git clone https://github.com/rojanagunoori/spotify-homepage-clone.git
    cd spotify-homepage-clone
-   ```
+````
 
 Install dependencies:
 
