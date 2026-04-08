@@ -5,8 +5,8 @@ const scopes = [
   "user-read-email",
   "playlist-read-private",
   "playlist-read-collaborative",
-  "user-library-read", 
-  "user-library-modify"
+  "user-library-read",
+  "user-library-modify",
 ].join(" ");
 
 const handler = NextAuth({
@@ -16,7 +16,7 @@ const handler = NextAuth({
       clientSecret: process.env.SPOTIFY_CLIENT_SECRET,
       authorization: {
         url: "https://accounts.spotify.com/authorize",
-        params: { scope: scopes,  prompt: "consent", },
+        params: { scope: scopes, prompt: "consent" },
       },
     }),
   ],
@@ -34,7 +34,9 @@ const handler = NextAuth({
       return session;
     },
   },
+
   secret: process.env.NEXTAUTH_SECRET,
+  debug: true, // 🔥 Turn on NextAuth debug mode
 });
 
 export { handler as GET, handler as POST };
