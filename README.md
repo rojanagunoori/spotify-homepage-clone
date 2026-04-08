@@ -12,8 +12,6 @@
 
 # Spotify Homepage Clone
 
-**Spotify Homepage Clone** is a fully functional web app built with **Next.js 13 (App Router)** and **NextAuth.js** that replicates the core functionality of the Spotify web app. Users can log in with Spotify, view their playlists, saved tracks, and interact with Spotify’s Web API.
-
 A React/Next.js app that mimics the Spotify homepage, allowing users to authenticate with Spotify, view their playlists and saved tracks, and interact with their library.
 
 **Live Demo:** [https://spotify-homepage-clone-two.vercel.app/](https://spotify-homepage-clone-two.vercel.app/)  
@@ -21,38 +19,15 @@ A React/Next.js app that mimics the Spotify homepage, allowing users to authenti
 
 ---
 
----
+## Features
 
-## 3. 🚀 Features
-
-The **Spotify Homepage Clone** includes several powerful and interactive features:
-
-- **Login with Spotify using OAuth via NextAuth.js**  
-  Secure authentication with Spotify OAuth, access to user-specific playlists and saved tracks, handled by NextAuth.js with JWT session management.
-
-- **View all user playlists**  
-  Displays playlist name, cover image, track count, owner, link to Spotify, and embedded Spotify preview iframe.
-
-- **View saved tracks**  
-  Shows track name, artists, album, link, and embedded Spotify preview for quick playback.
-
-- **Create new playlists**  
-  Users can create playlists on Spotify with name, description, and private setting. Newly created playlists appear immediately.
-
-- **Save or remove tracks from library**  
-  Users can add or remove tracks from their Spotify library seamlessly using Spotify Web API endpoints.
-
-- **Fully responsive UI using Tailwind CSS**  
-  Grid layout, buttons, and cards scale properly on mobile and desktop. Dark Spotify-inspired theme with hover effects.
-
-- **Dark Mode Inspired Spotify Theme**  
-  Black backgrounds, green accents, gray secondary text, visually similar to Spotify web app for familiarity and usability.
-
-- **Toggle Between Playlists and Saved Tracks**  
-  Easy navigation between playlists and saved tracks with responsive toggle buttons.
-
-- **Embedded Spotify Previews**  
-  Iframes allow playback of playlists and tracks without leaving the app.
+- User authentication with Spotify via **next-auth**.
+- Fetch and display user's playlists.
+- Fetch and display user's saved tracks.
+- Create new playlists.
+- Save and remove tracks from the user's Spotify library.
+- Embedded Spotify players for playlists and tracks.
+- Clean, dark-themed UI.
 
 ---
 
@@ -97,14 +72,13 @@ spotify-homepage-clone/
 
 ---
 
-## 5. Tech Stack / Environment
+## Technologies Used
 
-- **Frontend & Framework:** Next.js 13 (App Router), React
-- **Authentication:** NextAuth.js
-- **API:** Spotify Web API
-- **Styling:** Tailwind CSS, custom CSS
-- **Deployment:** Vercel
-- **Other Tools:** npm / yarn, fetch API
+- React 18 / Next.js 13 (App Router)
+- next-auth for authentication
+- Spotify Web API for music data
+- CSS modules with custom styles
+- React hooks (`useState`, `useEffect`)
 
 ---
 
@@ -148,44 +122,6 @@ npm run dev
 ```
 
 Open http://localhost:3000 to view the app.
-
----
-
-## Environment Variables
-
-Create a `.env.local` file:
-
-```bash
-SPOTIFY_CLIENT_ID=your_spotify_client_id
-SPOTIFY_CLIENT_SECRET=your_spotify_client_secret
-NEXTAUTH_URL=https://spotify-homepage-clone-two.vercel.app
-NEXTAUTH_SECRET=your_nextauth_secret
-```
-
-> Ensure your Spotify app’s redirect URI matches `NEXTAUTH_URL`.
-
----
-
-## API Usage
-
-**Spotify API Helpers** (`lib/spotify.js`)
-
-```bash
-// Get user playlists
-const playlists = await getUserPlaylists(accessToken);
-
-// Get saved tracks
-const savedTracks = await getUserSavedTracks(accessToken);
-
-// Create playlist
-await createPlaylist(accessToken, userId, "New Playlist", "Created via app");
-
-// Save a track
-await saveTrackToLibrary(accessToken, trackId);
-
-// Remove a track
-await removeTrackFromLibrary(accessToken, trackId);
-```
 
 ---
 
