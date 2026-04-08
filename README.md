@@ -9,6 +9,7 @@
 <video controls width="600">
   <source src="https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotifyclone.mp4" type="video/mp4">
 </video>
+
 ![Screenshot 1](https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotify1.png)
 
 ![Screenshot 2](https://raw.githubusercontent.com/rojanagunoori/spotify-homepage-clone/main/public/spotify2.png)
